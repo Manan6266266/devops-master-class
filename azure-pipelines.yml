@@ -7,7 +7,7 @@ trigger:
 - master
 
 pool:
-  vmImage: Self-Hosted-ACR
+  name: 'Self-Hosted-Acr'
 
 steps:
 - script: echo Hello, world!
