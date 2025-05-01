@@ -13,12 +13,12 @@ jobs:
           echo more info
           echo testing
           echo just for fun
-          displayName:'multiline script'
+        displayName: 'multiline script'
 
   - job: job2
     steps:
       - script: echo Job2Manan
-           displayName:'2nd job script'
+         displayName:'2nd job script'
 
 
 
