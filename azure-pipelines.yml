@@ -17,8 +17,8 @@ jobs:
 
   - job: job2
     steps:
-      - script: echo Job2
-        displayName: '2nd job script'
+      - script: echo Job2Manan
+           displayName:'2nd job script'
 
 
 
