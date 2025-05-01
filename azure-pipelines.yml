@@ -1,0 +1,32 @@
+trigger:
+- master
+
+pool:
+  name: 'Self-Hosted-Acr'
+  
+jobs:
+  - job: job1
+    steps:
+      - script: echo Job1 - Hello, Manan
+        displayName: 'Run one line script'
+      - script: |
+          echo more info
+          echo testing
+          echo just for fun
+        displayName: 'multiline script'
+
+  - job: job2
+    dependsOn: job1
+    steps:
+      - script: echo Job2Mananjais
+        displayName: '2nd job script'
+
+  - job: job3
+    dependsOn: job2
+    steps:
+      - script: echo Job3 Manan
+        displayName: '3rd job script'
+
+
+
+   
